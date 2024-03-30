@@ -1,0 +1,229 @@
+<div ng-controller="DetailController">
+
+    <div class="" style="background-color: rgb(80, 77, 74,.2);">
+
+        <div class="container ">
+            <div class="d-flex justify-content-between  align-content-center align-items-cente p-2 flex-wrap">
+
+                <p class="m-0 d-flex     align-content-center align-items-center ">Trang chủ
+                    /
+                    {{pdDetail.title}}
+                </p>
+                <br>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row   g-2">
+
+            <div class="col-lg-1  "></div>
+            <div class="col-lg-10 col-md-12">
+
+                <div class="row    g-2 d-flex">
+                    <div class="col-md-7 col-sm-12 ">
+                        <div id="carouselExampleControlsNoTouching" ride class="carousel slide" data-bs-touch="false"
+                            data-interval="true">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{pdDetail.image}}" class="d-block w-100" />
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-5 col-sm-12 ">
+                        <h4>{{pdDetail.title}}</h4>
+                        <p>Giá tour trọn gói</p>
+                        <div class="d-flex gap-5">
+                            <h4 class="text-primary">{{pdDetail.price}}</h4>
+                            <h4 class="text-warning">{{pdDetail.old_price}}</h4>
+                        </div>
+                        <div class="card text-start">
+                            <div class="card-body ">
+                                <p class="mb-0"><svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.15527 0.659912C10.042 0.659912 11.6006 2.21851 11.6006 4.10522C11.6006 5.66382 9.33105 8.45288 8.4834 9.49194C8.29199 9.68335 7.99121 9.68335 7.7998 9.49194C6.95215 8.45288 4.70996 5.66382 4.70996 4.10522C4.70996 2.21851 6.24121 0.659912 8.15527 0.659912ZM8.15527 5.25366C8.78418 5.25366 9.30371 4.76147 9.30371 4.10522C9.30371 3.47632 8.78418 2.95679 8.15527 2.95679C7.49902 2.95679 7.00684 3.47632 7.00684 4.10522C7.00684 4.76147 7.49902 5.25366 8.15527 5.25366ZM0.827148 6.56616L4.05371 5.28101C4.19043 5.69116 4.40918 6.10132 4.65527 6.53882V12.9099L0.854492 14.6326C0.581055 14.7693 0.280273 14.5505 0.280273 14.2224V7.38647C0.280273 7.03101 0.499023 6.70288 0.827148 6.56616ZM8.15527 10.5037C8.53809 10.5037 8.89355 10.3396 9.13965 10.0388C9.68652 9.40991 10.2607 8.69897 10.7803 7.93335V14.6599L5.53027 12.9099V7.93335C6.02246 8.69897 6.59668 9.40991 7.14355 10.0388C7.38965 10.3396 7.74512 10.5037 8.15527 10.5037ZM15.4287 5.0896C15.7021 4.95288 16.0303 5.17163 16.0303 5.49976V12.3357C16.0303 12.6912 15.7842 13.0193 15.4561 13.156L11.6553 14.6599V6.78491L15.4287 5.0896Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+                                    Xuất phát từ: {{pdDetail.start}}
+
+                                </p>
+                                <p class="mb-0"><svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.15527 0.659912C10.042 0.659912 11.6006 2.21851 11.6006 4.10522C11.6006 5.66382 9.33105 8.45288 8.4834 9.49194C8.29199 9.68335 7.99121 9.68335 7.7998 9.49194C6.95215 8.45288 4.70996 5.66382 4.70996 4.10522C4.70996 2.21851 6.24121 0.659912 8.15527 0.659912ZM8.15527 5.25366C8.78418 5.25366 9.30371 4.76147 9.30371 4.10522C9.30371 3.47632 8.78418 2.95679 8.15527 2.95679C7.49902 2.95679 7.00684 3.47632 7.00684 4.10522C7.00684 4.76147 7.49902 5.25366 8.15527 5.25366ZM0.827148 6.56616L4.05371 5.28101C4.19043 5.69116 4.40918 6.10132 4.65527 6.53882V12.9099L0.854492 14.6326C0.581055 14.7693 0.280273 14.5505 0.280273 14.2224V7.38647C0.280273 7.03101 0.499023 6.70288 0.827148 6.56616ZM8.15527 10.5037C8.53809 10.5037 8.89355 10.3396 9.13965 10.0388C9.68652 9.40991 10.2607 8.69897 10.7803 7.93335V14.6599L5.53027 12.9099V7.93335C6.02246 8.69897 6.59668 9.40991 7.14355 10.0388C7.38965 10.3396 7.74512 10.5037 8.15527 10.5037ZM15.4287 5.0896C15.7021 4.95288 16.0303 5.17163 16.0303 5.49976V12.3357C16.0303 12.6912 15.7842 13.0193 15.4561 13.156L11.6553 14.6599V6.78491L15.4287 5.0896Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+                                    Khởi hành:
+
+                                </p>
+                                <p class="mb-0"><svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.15527 0.659912C10.042 0.659912 11.6006 2.21851 11.6006 4.10522C11.6006 5.66382 9.33105 8.45288 8.4834 9.49194C8.29199 9.68335 7.99121 9.68335 7.7998 9.49194C6.95215 8.45288 4.70996 5.66382 4.70996 4.10522C4.70996 2.21851 6.24121 0.659912 8.15527 0.659912ZM8.15527 5.25366C8.78418 5.25366 9.30371 4.76147 9.30371 4.10522C9.30371 3.47632 8.78418 2.95679 8.15527 2.95679C7.49902 2.95679 7.00684 3.47632 7.00684 4.10522C7.00684 4.76147 7.49902 5.25366 8.15527 5.25366ZM0.827148 6.56616L4.05371 5.28101C4.19043 5.69116 4.40918 6.10132 4.65527 6.53882V12.9099L0.854492 14.6326C0.581055 14.7693 0.280273 14.5505 0.280273 14.2224V7.38647C0.280273 7.03101 0.499023 6.70288 0.827148 6.56616ZM8.15527 10.5037C8.53809 10.5037 8.89355 10.3396 9.13965 10.0388C9.68652 9.40991 10.2607 8.69897 10.7803 7.93335V14.6599L5.53027 12.9099V7.93335C6.02246 8.69897 6.59668 9.40991 7.14355 10.0388C7.38965 10.3396 7.74512 10.5037 8.15527 10.5037ZM15.4287 5.0896C15.7021 4.95288 16.0303 5.17163 16.0303 5.49976V12.3357C16.0303 12.6912 15.7842 13.0193 15.4561 13.156L11.6553 14.6599V6.78491L15.4287 5.0896Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+                                    Lịch trình: 3 ngày 2 đêm
+
+
+                                </p>
+                                <p class="mb-0"><svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.15527 0.659912C10.042 0.659912 11.6006 2.21851 11.6006 4.10522C11.6006 5.66382 9.33105 8.45288 8.4834 9.49194C8.29199 9.68335 7.99121 9.68335 7.7998 9.49194C6.95215 8.45288 4.70996 5.66382 4.70996 4.10522C4.70996 2.21851 6.24121 0.659912 8.15527 0.659912ZM8.15527 5.25366C8.78418 5.25366 9.30371 4.76147 9.30371 4.10522C9.30371 3.47632 8.78418 2.95679 8.15527 2.95679C7.49902 2.95679 7.00684 3.47632 7.00684 4.10522C7.00684 4.76147 7.49902 5.25366 8.15527 5.25366ZM0.827148 6.56616L4.05371 5.28101C4.19043 5.69116 4.40918 6.10132 4.65527 6.53882V12.9099L0.854492 14.6326C0.581055 14.7693 0.280273 14.5505 0.280273 14.2224V7.38647C0.280273 7.03101 0.499023 6.70288 0.827148 6.56616ZM8.15527 10.5037C8.53809 10.5037 8.89355 10.3396 9.13965 10.0388C9.68652 9.40991 10.2607 8.69897 10.7803 7.93335V14.6599L5.53027 12.9099V7.93335C6.02246 8.69897 6.59668 9.40991 7.14355 10.0388C7.38965 10.3396 7.74512 10.5037 8.15527 10.5037ZM15.4287 5.0896C15.7021 4.95288 16.0303 5.17163 16.0303 5.49976V12.3357C16.0303 12.6912 15.7842 13.0193 15.4561 13.156L11.6553 14.6599V6.78491L15.4287 5.0896Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+                                    Vận chuyển: Máy Bay, Ô Tô
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <a name="" id="" class="btn btn-primary w-100  mt-2 mb-2" href="#!giohang" role="button">ĐẶT
+                            TOUR
+                        </a>
+                        <p>Danh mục: Du lịch Đà Nẵng, Du lịch Hội An, Du lịch trong nước
+                        </p>
+                    </div>
+                </div>
+
+
+                <hr>
+                <div class="ItemDetailTour">
+                    <div>
+                        <span class="scroll-to" data-label="Scroll to: #lichtrinh" data-bullet="false"
+                            data-link="#lichtrinh" data-title="Scroll Schedule Tour"><a name="lichtrinh"></a></span>
+                    </div>
+                    <h3 class="titBoxDetailTour">Giới thiệu</h3>
+                    {{pdDetail.destination}}
+
+                </div>
+                <hr>
+                <h4 class="text-warning">ĐÁNH GIÁ</h4>
+                <p>Chưa có đánh giá nào.
+                </p>
+                <div class="card text-start">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">HÃY LÀ NGƯỜI ĐẦU TIÊN NHẬN XÉT “TOUR ĐÀ NẴNG HỘI AN 3 NGÀY 2
+                            ĐÊM TỪ HÀ NỘI
+                            TRỌN GÓI</h5>
+                        <p>Đánh giá của bạn *</p>
+                        <p class="card-text">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </p>
+                        <p>Nhận xét của bạn *</p>
+                        <div class="mb-3">
+                            <label for="" class="form-label"></label>
+                            <textarea class="form-control" name="" id="" rows="3"></textarea>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputEmail4">Tên *
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col mb-3">
+                                    <label for="inputEmail4">Địa chỉ *
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <p>Lưu tên của tôi, email, và trang web trong trình duyệt này cho lần bình luận kế tiếp của
+                                tôi.</p>
+                            <a name="" id="" class="btn btn-warning text-white" href="#" role="button">GỬI ĐI</a>
+
+                        </form>
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+            <div class="col-lg-1  "></div>
+            <div class="col-3 d-lg-block d-md-none d-sm-none d-none">
+                <h5 class="text-primary">GỌI NGAY ĐỂ ĐƯỢC TƯ VẤN</h5>
+                <a name="" id="" class="btn btn-warning w-100 text-white mt-2 mb-2" href="#" role="button">0826 15 15
+                    15</a>
+                <a name="" id="" class="btn btn-primary w-100 mb-2" href="#" role="button">0826 15 15 15
+                </a>
+                <div class="card text-start border-0">
+                    <div class="card-body p-0 d-flex">
+                        <img style="height: 54px; width: 79px;"
+                            src="https://cdn.animaapp.com/projects/65e9bdee82ef1684dfd23e1f/releases/65ea7e8d978def91b78f2cb2/img/link---trai-nghiem-truot-thac-hoa-phu-thanh-jpg@2x.png"
+                            class="img-fluid rounded-to me-2" alt="">
+                        <p>Khám phá khu du lịch Hoà
+                            Phú Thành Đà Nẵng chi tiết
+                            nhất</p>
+
+                    </div>
+                    <div class="card-body p-0 d-flex">
+                        <img style="height: 54px; width: 79px;"
+                            src="https://cdn.animaapp.com/projects/65e9bdee82ef1684dfd23e1f/releases/65ea7e8d978def91b78f2cb2/img/link---trai-nghiem-truot-thac-hoa-phu-thanh-jpg@2x.png"
+                            class="img-fluid rounded-to me-2" alt="">
+                        <p>Khám phá khu du lịch Hoà
+                            Phú Thành Đà Nẵng chi tiết
+                            nhất</p>
+
+                    </div>
+                    <div class="card-body p-0 d-flex">
+                        <img style="height: 54px; width: 79px;"
+                            src="https://cdn.animaapp.com/projects/65e9bdee82ef1684dfd23e1f/releases/65ea7e8d978def91b78f2cb2/img/link---trai-nghiem-truot-thac-hoa-phu-thanh-jpg@2x.png"
+                            class="img-fluid rounded-to me-2" alt="">
+                        <p>Khám phá khu du lịch Hoà
+                            Phú Thành Đà Nẵng chi tiết
+                            nhất</p>
+
+                    </div>
+                    <h5 class="text-primary">HOẶC GỬI YÊU CẦU TƯ VẤN</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Số điện thoại của bạn
+                            " aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-warning text-white" type="button">Gửi </button>
+                        </div>
+                    </div>
+                    <p>PTTravel sẽ liên hệ với bạn!
+                    </p>
+                    <div class="card-body p-0 d-flex">
+                        <img style="height: 74px; width: 99px;"
+                            src="https://cdn.animaapp.com/projects/65e9bdee82ef1684dfd23e1f/releases/65ea8b1a12bc3230b014cc4d/img/aside---tour-da-nang-hoi-an-3-ngay-2-dem-jpg@2x.png"
+                            class="img-fluid rounded-to me-2" alt="">
+                        <p>Tour Đà Nẵng Hội An 3 ngày
+                            2 đêm từ Hà Nội trọn gói</p>
+
+
+                    </div>
+                    <p>Lịch trình: 3 ngày 2 đêm
+                    </p>
+                    <button class="btn btn-warning text-white" type="button">ĐẶT TOUR NGAY <br> Giữ chỗ, chưa cần thanh
+                        toán
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

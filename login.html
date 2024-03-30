@@ -1,0 +1,58 @@
+<div class="bg-primary p-1 text-white">
+    <div class="container">
+        <h1>ĐĂNG NHẬP</h1> <br>
+        <p>Trang chủ / ĐĂNG NHẬP</p>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+    <div class="row justify-content-center  g-2 mb-5 mt-5">
+        <div class="col-sm-12 col-lg-6">
+            <h1>THÔNG TIN ĐĂNG NHẬP</h1>
+            <form name="myForm" ng-controller="LgCL" novalidate>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="inputPhone">Số điện thoại *</label>
+                        <input type="text" class="form-control" placeholder="Phone number" name="inputPhone"
+                            ng-model="phone" required>
+                        <div ng-show="myForm.inputPhone.$dirty && myForm.inputPhone.$error.required"
+                            class="text-danger">Vui lòng nhập số điện thoại.</div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="inputPassword">Mật khẩu</label>
+                        <input type="password" class="form-control" placeholder="Password" name="inputPassword"
+                            ng-model="password" required>
+                        <div ng-show="myForm.inputPassword.$dirty && myForm.inputPassword.$error.required"
+                            class="text-danger">Vui lòng nhập Mật khẩu.</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" ng-disabled="myForm.$invalid" ng-click="submitForm()">Đăng
+                    nhập</button>
+            </form>
+
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <h5>CÔNG TY TNHH DỊCH VỤ AM VIỆT NAM</h5>
+            <p>Trụ sở: Tòa CT4 – Chung cư Iris Garden, 30 Trần Hữu Dực, Nam Từ Liêm, Hà
+                Nội</p>
+            <p>ĐT: 024 6686 1789 | Hotline: 0832 577 555
+            </p>
+            <p>Email: info@pttravel.vn
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31349.820362877526!2d106.63237982068645!3d10.832150067585886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529a0012b43cb%3A0xb29f8dae6c0c28e7!2sFPT%20Polytechnic!5e0!3m2!1svi!2s!4v1709872131890!5m2!1svi!2s"
+                width="600" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+
+</div>

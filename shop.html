@@ -1,0 +1,68 @@
+<head>
+    <title>DU LỊCH NƯỚC NGOÀI</title>
+
+</head>
+
+
+<body ng-controller="ShopController">
+    <div class="bg-primary p-1 text-white">
+        <div class="container">
+            <h1>DU LỊCH NƯỚC NGOÀI</h1><br>
+            <p>Trang chủ / DU LỊCH NƯỚC NGOÀI</p>
+        </div>
+    </div>
+    <div class="container mt-5">
+
+
+        <div class="row justify-content-center g-5">
+            <div class="col-9">
+                <h3>Danh sách các Tour Du lịch nước ngoài</h3>
+
+                <div class="d-flex text-center align-items-center text-center flex-wrap">
+                    <p>Sắp xếp theo:</p>
+                    <a name="" id="" class="btn btn-warning m-1 text-white" href="#" role="button">Mới nhất</a>
+                    <a name="" id="" class="btn btn-warning m-1 text-white" href="#" role="button">Giá tăng dần</a>
+                    <a name="" id="" class="btn btn-warning m-1 text-white" href="#" role="button">Giá giảm dần</a>
+                    <a name="" id="" class="btn btn-warning m-1 text-white" href="#" role="button">Theo đánh giá</a>
+                </div>
+
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col-sm-12 col-md-6 col-lg-4" data-ng-repeat="i in myWelcome">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <img src="{{i.image}}" class="img-fluid rounded-top" alt="">
+                            </div>
+                            <div class="card-footer text-muted p-0 bg-white">
+                                <a href="#!chitiet?id={{$index}}" class="text-primary"> {{i.title}}</a>
+                                <div class="d-flex justify-content-between align-items-center text-center">
+                                    <div> {{i.duration_days}}</div>
+                                    <div>{{i.price}}</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div></div>
+                                    <div>{{i.old_price}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row justify-content-center align-items-center g-2 d-flex">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination d-flex justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>

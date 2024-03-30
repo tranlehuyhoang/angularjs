@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "title": "Tour du lịch Hà Khẩu Trung Quốc 2 ngày 1 đêm giá rẻ từ Hà Nội",
+      "destination": "Hà Khẩu vẫn luôn là địa điểm du lịch Trung Quốc được nhiều du khách yêu thích những năm gần đây bởi chi phí du lịch giá rẻ và cảnh quan cũng rất đẹp. Chính vì thế, PT Travel đã tổ chức các tour du lịch Hà Khẩu Trung Quốc 2 ngày 1 đêm để bạn có cơ hội khám phá vùng đất này. Hà Khẩu là một thành phố của Trung Quốc và ngay gần của khẩu Lào Cai. Để du lịch đến Hà Khẩu du khách chẳng cần chuẩn bị quá nhiều giấy tờ mà chỉ cần có 1 cuốn sổ thông hàng là có thể thoải mái khám phá Hà Khẩu. Vậy hãy cùng tìm hiểu chi tiết về tour du lịch Hà Khẩu ngay dưới đây nhé!",
+      "duration_days": "2 ngày 1 đêm",
+      "transportation": "Xe",
+      "start": "Hà Nội",
+      "price": "3,500,000 đ",
+      "old_price": "3,500,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2023/12/Tour-du-lich-Nha-Trang-Da-Lat-5-ngay-4-dem-PT-Travel-800x800.jpg"
+    },
+    {
+      "title": "Tour đảo Cát Bà 3 ngày 2 đêm",
+      "destination": "Cát Bà là một hòn đảo nổi tiếng của Việt Nam, nằm trong quần đảo Cát Bà thuộc huyện Cát Hải, thành phố Hải Phòng. Với vẻ đẹp hoang sơ, biển xanh trong lành và cảnh quan thiên nhiên tuyệt đẹp, Cát Bà đã trở thành điểm đến hấp dẫn của nhiều du khách trong và ngoài nước. Tour đảo Cát Bà 3 ngày 2 đêm của PT Travel sẽ mang đến cho bạn trải nghiệm thú vị và thư giãn tuyệt vời trên hòn đảo này. Hãy cùng khám phá tour du lịch đảo Cát Bà ngay dưới đây!",
+      "duration_days": "3 ngày 2 đêm",
+      "transportation": "Tàu",
+      "start": "Hải Phòng",
+      "price": "5,000,000 đ",
+      "old_price": "6,000,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2023/12/Du-xuan-Ha-Noi-Yen-Tu-Cua-Ong-Con-Son-Kiep-Bac-2-ngay-1-dem-800x800.jpg"
+    },
+    {
+      "title": "Tour du lịch Hạ Long 2 ngày 1 đêm",
+      "destination": "Hạ Long là một trong những điểm du lịch nổi tiếng của Việt Nam, với hệ thống đảo đá vôi kỳ vĩ và vịnh biển tuyệt đẹp. Tour du lịch Hạ Long 2 ngày 1 đêm của PT Travel sẽ đưa bạn khám phá vẻ đẹp hùng vĩ và trải nghiệm các hoạt động thú vị trên vịnh Hạ Long. Hãy cùng khám phá tour du lịch Hạ Long ngay dưới đây!",
+      "duration_days": "2 ngày 1 đêm",
+      "transportation": "Xe buýt",
+      "start": "Hà Nội",
+      "price": "3,500,000 đ",
+      "old_price": "4,000,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2023/11/Tour-Trung-Quoc-3-ngay-2-dem-gia-re-800x800.jpg"
+    },
+    {
+      "title": "Tour tham quan Sapa 4 ngày 3 đêm",
+      "destination": "Sapa là một điểm đến hấp dẫn ở miền Bắc Việt Nam, với những ngọn núi cao, thác nước đẹp và cánh đồng bậc thang xanh mướt. Tour tham quan Sapa 4 ngày 3 đêm của PT Travel sẽ đưa bạn khám phá vùng đất đầy màu sắc này và trải nghiệm văn hóa độc đáo của các dân tộc thiểu số. Hãy cùng khám phá tour tham quan Sapa ngay dưới đây!",
+      "duration_days": "4 ngày 3 đêm",
+      "transportation": "Xe đường bộ",
+      "start": "Hà Nội",
+      "price": "7,500,000 đ",
+      "old_price": "9,000,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2023/12/Tour-du-lich-Ha-Noi-Phu-Giay-Den-Tran-1-ngay-800x800.jpg"
+    },
+    {
+      "title": "Tour du lịch Nha Trang 5 ngày 4 đêm",
+      "destination": "Nha Trang là một thành phố biển nổi tiếng ở miền Trung Việt Nam, với bãi biển trắng mịn, nước biển trong xanh và rạn san hô đẹp. Tour du lịch Nha Trang 5 ngày 4 đêm của PT Travel sẽ đưa bạn khám phá vẻ đẹp tuyệt vời của thành phố này và tham gia các hoạt động thú vị như lặn biển, tham quan đảo và thưởng thức hải sản tươi ngon. Hãy cùng khám phá tour du lịch Nha Trang ngay dưới đây!",
+      "duration_days": "5 ngày 4 đêm",
+      "transportation": "Máy bay",
+      "start": "Hồ Chí Minh",
+      "price": "9,000,000 đ",
+      "old_price": "11,000,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2023/12/Tour-du-lich-Ha-Noi-Phu-Giay-Den-Tran-1-ngay-800x800.jpg"
+    },
+    {
+      "title": "Tour Đà Nẵng - Hội An 3 ngày 2 đêm",
+      "destination": "Đà Nẵng và Hội An là hai điểm du lịch nổi tiếng của Việt Nam. Đà Nẵng được biết đến với bãi biển Mỹ Khê tuyệt đẹp và cầu Rồng độc đáo. Hội An mang lại không gian cổ kính với phố cổ và cây cầu gỗ Chùa Cầu. Tour Đà Nẵng - Hội An 3 ngày 2 đêm của PT Travel sẽ đưa bạn khám phá những điểm đến hấp dẫn này. Hãy tham gia tour du lịch Đà Nẵng - Hội An ngay dưới đây!",
+      "duration_days": "3 ngày 2 đêm",
+      "transportation": "Xe buýt",
+      "start": "Đà Nẵng",
+      "price": "4,500,000 đ",
+      "old_price": "5,500,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2023/12/du-lich-Ha-Noi-Den-Hung-1-ngay-800x800.jpg"
+    },
+    {
+      "title": "Tour Sapa 3 ngày 2 đêm",
+      "destination": "Sapa là một vùng núi nổi tiếng của Việt Nam, nằm ở tỉnh Lào Cai. Với khí hậu mát mẻ và cảnh quan thiên nhiên tuyệt đẹp, Sapa thu hút du khách bằng những cánh đồng lúa bậc thang và bản làng của các dân tộc thiểu số. Tour Sapa 3 ngày 2 đêm của PT Travel sẽ mang đến cho bạn những trải nghiệm tuyệt vời trong vùng núi này. Hãy tham gia tour du lịch Sapa ngay dưới đây!",
+      "duration_days": "3 ngày 2 đêm",
+      "transportation": "Xe khách",
+      "start": "Hà Nội",
+      "price": "3,500,000 đ",
+      "old_price": "4,500,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2024/01/tour-hoi-an-3-ngay-2-dem-800x800.jpg"
+    },
+    {
+      "title": "Tour du lịch Hạ Long 2 ngày 1 đêm",
+      "destination": "Hạ Long là một trong những điểm du lịch nổi tiếng của Việt Nam, với vịnh Hạ Long được UNESCO công nhận là di sản thiên nhiên thế giới. Tour du lịch Hạ Long 2 ngày 1 đêm của PT Travel sẽ đưa bạn đến khám phá vẻ đẹp tuyệt vời của vịnh Hạ Long, tham quan những hòn đảo đẹp như Đầu Rồng, Sửng Sốt, Ti Tốp và thưởng thức những món ăn đặc sản độc đáo của địa phương.",
+      "duration_days": "2 ngày 1 đêm",
+      "transportation": "Xe buýt",
+      "start": "Hà Nội",
+      "price": "3,500,000 đ",
+      "old_price": "4,000,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2024/01/tour-hoi-an-2-ngay-1-dem-800x800.jpg"
+    },
+    {
+      "title": "Tour du lịch Sapa 3 ngày 2 đêm",
+      "destination": "Sapa là một điểm du lịch nổi tiếng thuộc tỉnh Lào Cai, Việt Nam. Với khí hậu mát mẻ, cảnh quan thiên nhiên hùng vĩ và văn hóa độc đáo của các dân tộc thiểu số, Sapa thu hút rất nhiều du khách. Tour du lịch Sapa 3 ngày 2 đêm của PT Travel sẽ đưa bạn đến khám phá những cánh đồng bậc thang xanh mướt, thăm thú các bản làng của các dân tộc và tận hưởng không gian yên bình của núi rừng.",
+      "duration_days": "3 ngày 2 đêm",
+      "transportation": "Xe hơi",
+      "start": "Hà Nội",
+      "price": "6,500,000 đ",
+      "old_price": "7,500,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2023/11/tour-Dong-Bac-4-ngay-3-dem-PT-Travel-to-chuc-800x800.jpg"
+    },
+    {
+      "title": "Tour du lịch Nha Trang 4 ngày 3 đêm",
+      "destination": "Nha Trang là thành phố du lịch nằm ở tỉnh Khánh Hòa, Việt Nam. Với bãi biển trải dài, nước biển trong xanh và cảnh quan thiên nhiên tuyệt đẹp, Nha Trang là một điểm đến hấp dẫn của du khách. Tour du lịch Nha Trang 4 ngày 3 đêm của PT Travel sẽ đưa bạn đến tham quan những địa điểm nổi tiếng như biển Bãi Dài, đảo Hòn Tằm và tham gia các hoạt động nước thú vị.",
+      "duration_days": "4 ngày 3 đêm",
+      "transportation": "Máy bay",
+      "start": "Sài Gòn",
+      "price": "8,000,000 đ",
+      "old_price": "9,000,000 đ",
+      "image": "https://pttravel.vn/wp-content/uploads/2023/12/Tour-phan-thiet-da-lat-5-ngay-4-dem-800x800.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "df2c",
+      "name": "123",
+      "address": "123",
+      "phone": "12323",
+      "email": "2509roblox@gmail.com",
+      "password": "123"
+    }
+  ]
+}
