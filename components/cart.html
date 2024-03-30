@@ -1,0 +1,166 @@
+<div class="bg-primary p-1 text-white">
+    <div class="container">
+        <h1>GIỎ HÀNG</h1> <br>
+        <p>Trang chủ /GIỎ HÀNG</p>
+    </div>
+
+</div>
+<div ng-controller="CCL">
+    <div class="container">
+        <div class="table-responsive bg-white">
+            <table class="table border-1 bg-white">
+                <thead>
+                    <tr>
+                        <th scope="col">TOUR</th>
+                        <th scope="col" class="">GIÁ</th>
+                        <th scope="col">SỐ LƯỢNG</th>
+                        <th scope="col">TẠM TÍNH
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="" ng-repeat="cart in carts">
+                        <td scope="row" class=" d-flex  align-content-center">
+                            <div class="d-flex align-items-center gap-3"> <i class="bi bi-x-circle"></i>
+                                <img src="{{ cart.product.image }}" class="img-fluid rounded-top" alt=""
+                                    style="height: 50px;" />
+                                <p>{{ cart.product.title }}</p>
+                            </div>
+                        </td>
+                        <td class="  align-items-center  ">
+                            <div class="d-flex align-items-center gap-3">
+                                <p>{{ cart.product.price }}</p>
+                            </div>
+                        </td>
+                        <td class="  align-items-center ">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="form-outline w-25" data-mdb-input-init>
+                                    <input type="number" id="form12" class="form-control" value="{{ cart.quantity }}" />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="   align-items-center  justify-content-center  ">
+                            <div class="d-flex align-items-center gap-3">
+                                <p>{{ cart.quantity * cart.product.price }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="">
+
+                        <td colspan="4" class="  align-items-center  ">
+                            <div class="d-flex align-items-center gap-3">
+
+                                <a name="" id="" class="btn btn-primary" href="#" role="button">← TIẾP TỤC XEM TOUR</a>
+                                <a name="" id="" class="btn btn-primary" href="#" role="button">CẬP NHẬT GIỎ HÀNG</a>
+
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="container">
+        <p>Bạn có mã ưu đãi? Ấn vào đây để nhập mã
+        </p>
+        <p>“Tour du lịch Thái Lan 5 ngày 4 đêm từ Hà Nội bay chuyến sáng” đã được thêm vào giỏ hàng.</p>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center  g-2 mb-5">
+            <div class="col-sm-12 col-lg-6">
+                <p>THÔNG TIN LIÊN HỆ</p>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputEmail4">Tên *
+                            </label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col mb-3">
+                            <label for="inputEmail4">Địa chỉ *
+                            </label>
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="inputEmail4">Số điện thoại *
+                            </label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="inputEmail4">Địa chỉ email (tuỳ chọn)
+                            </label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputEmail4">Ghi chú thêm</label>
+                            <div class="mb-3">
+                                <label for="" class="form-label"></label>
+                                <textarea class="form-control" name="" id="" rows="3"></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="card">
+
+                    <div class="card-body">
+                        <h5 class="card-title">THÔNG TIN TOUR ĐÃ ĐẶT</h5>
+                        <div class="table-responsive">
+                            <table class="table  bg-transparent">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">TOUR</th>
+                                        <th scope="col">TẠM TÍNH
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="" ng-repeat="cart in carts">
+                                        <td scope="row">{{ cart.product.title }} × {{ cart.quantity }}</td>
+                                        <td>{{ cart.quantity * cart.product.price }}
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="">
+                                        <td scope="row">Tổng</td>
+                                        <td>{{ totalAmount | currency: '₫' }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Đặt giữ chỗ trước, thanh toán sau</p>
+                            <a name="" id="" class="btn btn-primary" href="./thanh-toan.html" role="button">ĐẶT TOUR
+                                NGAY
+                            </a>
+                            <p>Thông tin cá nhân của bạn sẽ được sử dụng để xử lý đơn hàng,
+                                tăng trải nghiệm sử dụng website, và cho các mục đích cụ thể
+                                khác đã được mô tả trong chính sách riêng tư của chúng tôi.
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
