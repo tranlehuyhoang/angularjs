@@ -121,26 +121,5 @@
       "password": "123"
     }
   ],
-  "carts": [
-    {
-      "id": "f5a0",
-      "product_id": "11",
-      "quantity": 1
-    },
-    {
-      "id": "36ff",
-      "product_id": "12",
-      "quantity": 1
-    },
-    {
-      "id": "ce24",
-      "product_id": "12",
-      "quantity": 5
-    },
-    {
-      "id": "393b",
-      "product_id": "19",
-      "quantity": 1
-    }
-  ]
+  "carts": []
 }

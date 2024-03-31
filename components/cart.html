@@ -22,7 +22,8 @@
 
                     <tr class="" ng-repeat="cart in carts">
                         <td scope="row" class=" d-flex  align-content-center">
-                            <div class="d-flex align-items-center gap-3"> <i class="bi bi-x-circle"></i>
+                            <div class="d-flex align-items-center gap-3"> <i ng-click="dele(cart.id)"
+                                    class="bi bi-x-circle"></i>
                                 <img src="{{ cart.product.image }}" class="img-fluid rounded-top" alt=""
                                     style="height: 50px;" />
                                 <p>{{ cart.product.title }}</p>
@@ -145,8 +146,7 @@
                                 </tbody>
                             </table>
                             <p>Đặt giữ chỗ trước, thanh toán sau</p>
-                            <a name="" id="" class="btn btn-primary" href="./thanh-toan.html" role="button">ĐẶT TOUR
-                                NGAY
+                            <a name="" id="" class="btn btn-primary" ng-click="checkout()" role="button">THANH TOÁN
                             </a>
                             <p>Thông tin cá nhân của bạn sẽ được sử dụng để xử lý đơn hàng,
                                 tăng trải nghiệm sử dụng website, và cho các mục đích cụ thể

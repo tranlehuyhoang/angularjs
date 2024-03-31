@@ -1,41 +1,58 @@
 app.controller('ShopController', function ($scope, $http) {
-    $scope.myWelcome = [];
-    $scope.isLoading = true;
+    $scope.default = [];
+    $scope.asc = [];
+    $scope.des = [];
+    $scope.view = 1;
+    $scope.isDataLoaded = false; // Biến kiểm tra xem dữ liệu đã được tải từ API hay chưa
 
-    $http({
-        method: 'GET',
-        url: 'http://localhost:3000/products'
-    }).then(function success(response) {
-        $scope.myWelcome = response.data;
-        $scope.def = response.data;
-        $scope.isLoading = false;
-    }, function error(response) {
-        console.log(response);
-        $scope.isLoading = false;
-    });
+    function fetchData() {
+
+        $http({
+            method: 'GET',
+            url: 'http://localhost:3000/products'
+        }).then(function success(response) {
+            $scope.default = response.data;
+            $scope.asc = angular.copy(response.data).sort(function (a, b) {
+                return a.price - b.price;
+            });
+            $scope.des = angular.copy(response.data).sort(function (a, b) {
+                return b.price - a.price;
+            });
+            console.log('$scope.default', $scope.default);
+            console.log('$scope.asc', $scope.asc);
+            console.log('$scope.des', $scope.des);
+            $scope.isDataLoaded = true; // Đánh dấu rằng dữ liệu đã được tải từ API
+            console.log($scope.isDataLoaded)
+            console.log($scope.view)
+        }, function error(response) {
+            // Xử lý lỗi
+        });
+    }
+
+    if (!$scope.isDataLoaded) {
+        fetchData(); // Lấy dữ liệu từ API nếu chưa được tải
+    }
 
     $scope.new = function () {
-        $scope.myWelcome = angular.copy($scope.def);
-        console.log($scope.myWelcome);
 
+        $scope.view = 1;
     };
 
-    $scope.asc = function () {
-        if ($scope.isLoading) {
-            return;
+    $scope.sortAsc = function () {
+
+        $scope.view = 2;
+        if (!$scope.isDataLoaded) {
+            fetchData(); // Lấy dữ liệu từ API nếu chưa được tải
         }
-        $scope.myWelcome.sort(function (a, b) {
-            return a.price - b.price;
-        });
-        console.log($scope.myWelcome);
+        console.log($scope.view)
 
     };
 
-    $scope.des = function () {
-        $scope.myWelcome.sort(function (a, b) {
-            return b.price - a.price;
-        });
-        console.log($scope.myWelcome);
+    $scope.sortDesc = function () {
 
+        $scope.view = 3;
+        if (!$scope.isDataLoaded) {
+            fetchData(); // Lấy dữ liệu từ API nếu chưa được tải
+        }
     };
 });

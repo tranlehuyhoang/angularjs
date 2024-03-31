@@ -3,12 +3,11 @@ app.controller('DetailController', ['$scope', '$http', '$routeParams', function 
     $scope.quantity = 1;
     $http({
         method: 'GET',
-        url: 'http://localhost:3000/products'
+        url: 'http://localhost:3000/products/' + id
     }).then(function success(response) {
-        $scope.pdDetail = response.data[id];
-
+        $scope.pdDetail = response.data;
     }, function error(response) {
-        // Handle error
+        // Xử lý lỗi
     });
 
     $scope.submitForm = function (id) {

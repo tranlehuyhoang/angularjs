@@ -33,4 +33,33 @@ app.controller('CCL', ['$scope', '$http', function ($scope, $http) {
     }, function error(response) {
         console.log(response);
     });
+
+
+    $scope.dele = function (id) {
+
+        $http({
+            method: 'DELETE',
+            url: 'http://localhost:3000/carts/' + id
+
+        }).then(function success(response) {
+        }, function error(response) {
+            // Xử lý lỗi
+            console.log(response);
+        });
+
+    };
+    $scope.checkout = function () {
+        $scope.carts.forEach(function (item) {
+            $http({
+                method: 'DELETE',
+                url: 'http://localhost:3000/carts/' + item.id
+            }).then(function success(response) {
+                // Handle success
+                console.log('Item with ID ' + item.id + ' deleted successfully');
+            }, function error(response) {
+                // Handle error
+                console.log('Error deleting item with ID ' + item.id + ':', response);
+            });
+        });
+    };
 }]);
