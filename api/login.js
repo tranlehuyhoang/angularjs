@@ -1,4 +1,10 @@
 app.controller('LgCL', ['$scope', '$http', function ($scope, $http) {
+    storedUsers = localStorage.getItem('users');
+
+    var users = JSON.parse(storedUsers);
+
+    // Access the name property of the first user
+    $scope.userName = users[0].phone;
     $scope.submitForm = function () {
         var params = {
             phone: $scope.phone,
@@ -25,6 +31,10 @@ app.controller('LgCL', ['$scope', '$http', function ($scope, $http) {
                 }
 
                 if (isLoggedIn) {
+                    // Lưu mảng users vào LocalStorage
+                    localStorage.setItem('users', JSON.stringify(users));
+
+
                     // Hiển thị thông báo đăng nhập thành công
                     alert("Đăng nhập thành công");
                 } else {

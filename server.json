@@ -118,7 +118,26 @@
       "address": "123",
       "phone": "12323",
       "email": "2509roblox@gmail.com",
+      "password": "3"
+    },
+    {
+      "id": "a06a",
+      "name": "123",
+      "address": "123",
+      "phone": "123",
+      "email": "2509roblox@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "26ed",
+      "name": "2509roblox",
+      "address": "2509roblox",
+      "phone": "2509roblox",
+      "email": "2509roblox@gmail.com",
+      "password": "2509roblox"
+    },
+    {
+      "id": "e952"
     }
   ],
   "carts": []

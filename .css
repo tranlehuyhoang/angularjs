@@ -1,0 +1,607 @@
+@media (min-width: 768px) {
+    /* .img-btn {
+        top : 0;
+        left: 26.92rem;
+    }
+
+    .img-btn img.img-highlight {
+        height: 14.58rem;
+    }
+
+    .img-btn button {
+        left         : auto;
+        right        : -4.16rem;
+        margin-top   : 0.94rem;
+        width        : auto;
+        padding      : 0.84rem 1.54rem;
+        border-radius: 1.82rem;
+    }
+
+    .img-btn button a {
+        font-family: 'Inter', sans-serif;
+        line-height: inherit;
+        font-size  : 1.54rem;
+        font-weight: 700;
+    }
+
+    section.home-section {
+        padding : 0;
+        position: relative;
+        height  : 36.9rem;
+    }
+
+    .header-context {
+        margin-top: 9.35rem;
+        height    : auto;
+    }
+
+    .text-wrapper {
+        align-items: flex-start;
+        width      : 51%;
+    }
+
+    .text-wrapper h1.heading {
+        color         : rgba(255, 114, 47, 1);
+        font-family   : 'Inter', sans-serif;
+        font-weight   : 800;
+        font-size     : 4.61rem;
+        margin-top    : 0.55rem;
+        line-height   : 130%;
+        margin-left   : -0.29rem;
+        letter-spacing: 0.026rem;
+    }
+
+    .text-wrapper .subtitle {
+        font-family    : 'Inter', sans-serif;
+        font-weight    : 200;
+        font-size      : 2.56rem;
+        display        : flex;
+        justify-content: center;
+        width          : 100%;
+        margin-top     : 2.95rem;
+        letter-spacing : -0.073rem;
+        margin-left    : -0.29rem;
+    }
+
+    .text-wrapper span {
+        display        : flex;
+        width          : 100%;
+        justify-content: center;
+        font-family    : 'Inter', sans-serif;
+        font-weight    : 600;
+        font-size      : 2.56rem;
+        padding-top    : 0.22rem;
+        letter-spacing : -0.037rem;
+        margin-left    : -0.29rem;
+    }
+
+    .home-section .banner {
+        right   : 0;
+        left    : auto;
+        position: absolute;
+        width   : 49%;
+        top     : -3.66rem;
+        height  : 40.54rem;
+    }
+
+    section.home-section .header-container {
+        max-width: 87.12rem;
+        margin   : auto;
+        position : static;
+    }
+
+    .home-section .banner img {
+        width     : 51.61rem;
+        position  : absolute;
+        right     : 0;
+        object-fit: cover;
+    }
+
+    .marketing-section {
+        height     : auto;
+        padding    : 0;
+        max-width  : 87.12rem;
+        margin     : auto;
+        padding-top: 5.69rem;
+    }
+
+    .marketing-left {
+        width: 56.85%;
+    }
+
+    .marketing-right {
+        width: 43.15%;
+    }
+
+    .swiper-fade .swiper-slide {
+        padding-top   : 4.23rem;
+        padding-bottom: 4.64rem;
+    }
+
+    .marketing-left .blur_background {
+        background   : rgba(1, 221, 180, 1);
+        border       : 0.07rem solid rgba(0, 0, 0, 1);
+        border-radius: 2.12rem;
+        height       : 32.49rem;
+        padding      : 2.12rem 2.94rem;
+        position     : relative;
+    }
+
+    .marketing-left .blur_background img {
+        max-width : 100%;
+        max-height: 100%;
+        object-fit: cover;
+        position  : absolute;
+        left      : 0;
+        right     : 0;
+        bottom    : 0;
+        top       : 0;
+        height    : auto;
+        width     : auto;
+    }
+
+    .swiper-slide-active.sales-marketing-1 .context {
+        left: 5.64rem;
+        top : 0px;
+    }
+
+    .swiper-slide-active.sales-marketing-1 .context,
+    .swiper-slide-active.sales-marketing-2 .context {
+        padding      : 0.95rem 1.47rem 1.54rem 1.47rem;
+        width        : 41%;
+        text-align   : center;
+        border-radius: 1.88rem;
+        background   : rgba(227, 100, 173, 1);
+        z-index      : 1;
+    }
+
+    .swiper-slide .context {
+        display : none;
+        position: absolute;
+    }
+
+    .swiper-slide-active .context {
+        display: block;
+    }
+
+    .marketing-left .context p {
+        font-style : italic;
+        font-size  : 1.61rem;
+        font-family: 'Inter', sans-serif;
+        line-height: 130%;
+        font-weight: 500;
+    }
+
+    .swiper-fade .swiper-slide-active {
+        z-index: 3;
+    }
+
+    .swiper-slide-active.sales-marketing-2 .context {
+        top  : 0;
+        right: 5.88rem;
+    }
+
+    .marketing-left .dots {
+        position: absolute;
+        bottom  : 0;
+        height  : auto;
+        margin  : 0;
+        gap     : 1.06rem;
+    }
+
+    .marketing-left .dots .swiper-pagination-bullet {
+        margin       : 0;
+        width        : 1.87rem;
+        height       : 1.87rem;
+        background   : rgba(1, 221, 180, 1);
+        border-radius: 50%;
+        opacity      : 1;
+    }
+
+    .marketing-left .dots .swiper-pagination-bullet-active {
+        background: rgba(255, 114, 47, 1);
+    }
+
+    .marketing-right {
+        padding   : 3.66rem 0 0 2.88rem;
+        margin-top: 4.70rem;
+    }
+
+    .marketing-right .text-top {
+        font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        font-size  : 2.25rem;
+        color      : rgba(0, 0, 0, 1);
+    }
+
+    .marketing-right .text-top span {
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        color      : rgba(1, 221, 180, 1);
+        font-size  : 4.25rem;
+        line-height: 140%;
+        display    : block;
+        text-align : left;
+        margin-left: -0.29rem;
+        left       : 0;
+    }
+
+    .marketing-right .text-center {
+        left       : 6.96rem;
+        margin-top : -0.96rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size  : 3.07rem;
+        line-height: 110%;
+        width      : max-content;
+    }
+
+    .marketing-right .text-center span {
+        font-family: 'Inter', sans-serif;
+        color      : rgba(255, 114, 47, 1);
+        font-size  : 5.42rem;
+        line-height: 100%;
+    }
+
+    .text-bottom {
+        left       : 6.96rem;
+        font-size  : 1.61rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        margin-top : 0.69rem;
+        width      : max-content;
+    }
+
+    .text-bottom span {
+        font-style : italic;
+        font-weight: 500;
+        color      : rgba(237, 122, 65, 1);
+    }
+
+    .marketing-right button {
+        text-align : right;
+        width      : 100%;
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size  : 2.78rem;
+        padding-top: 0.16rem;
+    }
+
+    .livestream-section {
+        max-width: 87.12rem;
+        margin   : auto;
+        padding  : 8.6rem 0 0 0;
+    }
+
+    .livestream-section .content-wrapper .heading {
+        padding       : 0;
+        font-family   : 'Inter', sans-serif;
+        color         : rgba(243, 122, 67, 1);
+        font-weight   : 700;
+        letter-spacing: 0;
+        line-height   : 100%;
+        font-size     : 6.6rem;
+    }
+
+    .livestream-section .content-wrapper .heading span {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size  : 9.81rem;
+        line-height: 100%;
+        padding-top: 0.2rem;
+        display    : block;
+    }
+
+    .livestream-section .content-wrapper p {
+        justify-content: flex-start;
+        font-family    : 'Inter', sans-serif;
+        font-weight    : 300;
+        font-size      : 1.68rem;
+        margin-top     : 7.5rem;
+    }
+
+    .livestream-section .content-wrapper img {
+        max-width   : 8.76rem;
+        margin-left : auto;
+        margin-right: 8.82rem;
+    }
+
+    .service-wrapper {
+        gap       : 2.94rem;
+        margin-top: -2.72rem;
+    }
+
+    .box-text {
+        border-radius: 1.5rem;
+        background   : rgba(243, 122, 67, 1);
+        padding      : 2.82rem;
+        gap          : 2.13rem;
+        height       : auto;
+    }
+
+    .box-text h4 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size  : 2.05rem;
+        margin-top : 2.58rem;
+    }
+
+    .box-text p {
+        font-family   : 'Inter', sans-serif;
+        font-size     : 1.1rem;
+        font-weight   : 400;
+        padding-bottom: 3.08rem;
+    }
+
+    .nav-section {
+        padding  : 0;
+        height   : auto;
+        max-width: 87.12rem;
+        margin   : 2.7rem auto 0;
+        overflow : hidden;
+    }
+
+    .nav-section ul li {
+        width        : 10.58rem;
+        height       : auto;
+        border       : 0.07rem solid rgba(0, 0, 0, 1);
+        min-height   : 3.06rem;
+        align-items  : center;
+        padding      : 0px 0.73rem;
+        border-radius: 1.54rem;
+    }
+
+    .nav-section ul {
+        gap: 1.18rem;
+    }
+
+    .nav-section ul li a {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size  : 1.02rem;
+        line-height: 120%;
+    }
+
+    .nav-section ul {
+        width: max-content;
+    }
+
+    section.brand-section {
+        margin : 6rem auto 0;
+        padding: 0;
+    }
+
+    .brand-section .img-three {
+        max-width: 13.91rem;
+    }
+
+    .brand-section h1 {
+        font-family   : 'Inter', sans-serif;
+        font-weight   : 800;
+        font-size     : 5.27rem;
+        padding-top   : 3.68rem;
+        letter-spacing: 0;
+        line-height   : 135%;
+    }
+
+    .brand-section h1 .one {
+        font-family   : 'Inter', sans-serif;
+        font-weight   : 900;
+        letter-spacing: -0.37rem;
+        color         : rgba(255, 114, 47, 1);
+        display       : inline-block;
+        margin-left   : -0.59rem;
+        padding-right : 0.81rem;
+        font-size     : 9.88rem;
+        line-height   : 100%;
+    }
+
+    .brand-section h1 .two {
+        font-family   : 'Inter', sans-serif;
+        font-weight   : 900;
+        letter-spacing: 0px;
+        font-size     : 6.15rem;
+        line-height   : 100%;
+        margin-left   : -0.37rem;
+    }
+
+    .brand-section h1 .three {
+        font-weight   : 900;
+        letter-spacing: 0;
+        font-size     : 6.44rem;
+        line-height   : 100%;
+        padding-left  : 0.51rem;
+    }
+
+    .brand-section .img-one {
+        bottom   : 0;
+        right    : 18.37rem;
+        width    : 21.75rem;
+        max-width: max-content;
+    }
+
+    .brand-section .img-two {
+        bottom   : 2.35rem;
+        max-width: max-content;
+        width    : 22.1rem;
+    }
+
+    .brand-section img.img-bantay {
+        position: absolute;
+        bottom  : 17.84rem;
+        right   : 16.75rem;
+        width   : 7.41rem;
+    }
+
+    .brand-section p {
+        font-family   : 'Inter', sans-serif;
+        font-size     : 1.98rem;
+        font-weight   : 300;
+        line-height   : 140%;
+        margin-top    : 15.64rem;
+        padding-bottom: 8.7rem;
+    }
+
+    .advertise-section {
+        height: auto;
+    }
+
+    .advertise-section .box.one {
+        align-items : flex-start;
+        padding-left: 5.82rem;
+    }
+
+    .advertise-section .box h1 {
+        margin-bottom: 0;
+        font-family  : 'Inter', sans-serif;
+        font-weight  : 800;
+        font-size    : 2.05rem;
+        line-height  : 100%;
+    }
+
+    .advertise-section .box {
+        padding-top: 5.17rem;
+    }
+
+    .advertise-section .box.two h1 {
+        color: #fff;
+    }
+
+    .advertise-section .box p {
+        left          : 0;
+        margin-bottom : 0;
+        font-family   : 'Inter', sans-serif;
+        line-height   : 130%;
+        letter-spacing: 0px;
+        font-size     : 1.28rem;
+        font-weight   : 600;
+        padding-top   : 7.94rem;
+    }
+
+    .advertise-section .box.two p {
+        color       : #fff;
+        padding-left: 0.9rem;
+    }
+
+    .advertise-section .box button {
+        margin-top   : 14.49rem;
+        font-family  : 'Inter', sans-serif;
+        font-weight  : 600;
+        font-size    : 1.61rem;
+        padding      : 0.88rem 1.76rem;
+        border-radius: 1.61rem;
+        line-height  : 1;
+        margin-bottom: 11.52rem;
+    }
+
+    .advertise-section .box.one button {
+        margin-left: 7.41rem;
+    }
+
+    .advertise-section .img-text {
+        top      : 11.34rem;
+        transform: translate(-50%, 0%);
+        max-width: max-content;
+        height   : 9.52rem;
+    }
+
+    .advertise-section img {
+        top      : auto;
+        bottom   : 4.11rem;
+        transform: translate(-55.75%, 0%);
+        max-width: max-content;
+        height   : 23.51rem;
+    }
+
+    .advertise-section .box button {
+        cursor: pointer;
+    }
+
+    .advertise-section .box button {
+        cursor: pointer;
+    }
+
+    section.connect-section {
+        padding  : 2.59rem 0 0 0;
+        max-width: 87.12rem;
+        margin   : auto;
+    }
+
+    .connect-section .context h1 {
+        margin     : 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        line-height: 100%;
+    }
+
+    .connect-section .context h4 {
+        font-family   : 'Inter', sans-serif;
+        font-weight   : 500;
+        letter-spacing: 0;
+        font-size     : 4.25rem;
+        line-height   : 100%;
+        padding-top   : 2.09rem;
+    }
+
+    .connect-section .context p {
+        font-family   : 'Inter', sans-serif;
+        font-weight   : 300;
+        line-height   : 100%;
+        letter-spacing: -0.07rem;
+        padding-top   : 0.91rem;
+    }
+
+    .connect-section .context p span {
+        font-weight   : 800;
+        font-style    : italic;
+        letter-spacing: 0;
+    }
+
+    .nav-logo {
+        margin         : 0;
+        padding        : 0;
+        justify-content: flex-start;
+   
+    }
+
+    section.connect-section .context {
+        overflow-x: hidden;
+    }
+
+    section.connect-section .context .slideContainer {
+        margin-top   : 5.89rem;
+        margin-bottom: 3.76rem;
+    }
+
+    .nav-logo img {
+        max-width: 10.25rem;
+    }
+
+    .img-btn img.img-highlight {
+        animation: mymove 2s infinite;
+        top      : -1.1rem;
+        position : relative;
+    }
+
+    @keyframes mymove {
+        0% {
+            top: -1.1rem;
+        }
+
+        25% {
+            top: -0.09rem;
+        }
+
+        50% {
+            top: -0.07rem;
+        }
+
+        75% {
+            top: -0.09rem;
+        }
+
+        100% {
+            top: -1.1rem;
+        }
+    } */
+}

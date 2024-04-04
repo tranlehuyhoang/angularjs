@@ -26,9 +26,14 @@ app.config(function ($routeProvider) {
         .when("/chitiet", {
             templateUrl: "../components/chitiet.html",
             controller: "DetailController"
+        }).when("/fogot", {
+            templateUrl: "../components/fogot.html",
+            controller: "FogotController"
         })
         .otherwise({
             redirecTo: '/home'
         })
 
 });
+
+

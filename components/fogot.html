@@ -1,36 +1,26 @@
 <div class="bg-primary p-1 text-white">
     <div class="container">
-        <h1>ĐĂNG NHẬP</h1> <br>
-        <p>Trang chủ / ĐĂNG NHẬP</p>
+        <h1>ĐỔI MẬT KHẨU</h1> <br>
+        <p>Trang chủ / ĐỔI MẬT KHẨU </p>
     </div>
 
 </div>
 
 
-
 <div class="container">
     <div class="row justify-content-center  g-2 mb-5 mt-5">
         <div class="col-sm-12 col-lg-6">
-            <h1>THÔNG TIN ĐĂNG NHẬP</h1>
-            <form name="myForm" ng-controller="LgCL" novalidate>
-                <p>User Name: {{ userName }}</p>
+            <h1>ĐỔI MẬT KHẨU</h1>
+            <form name="myForm" ng-controller="FogotController" novalidate>
+                <p>User Name: {{ userNames }}</p>
+                <p>User id: {{ id }}</p>
+                <p>User password: {{ pass }}</p>
 
 
 
                 <div class="row">
                     <div class="col mb-3">
-                        <label for="inputPhone">Số điện thoại *</label>
-                        <input type="text" class="form-control" placeholder="Phone number" name="inputPhone"
-                            ng-model="phone" required>
-                        <div ng-show="myForm.inputPhone.$dirty && myForm.inputPhone.$error.required"
-                            class="text-danger">Vui lòng nhập số điện thoại.</div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col mb-3">
-                        <label for="inputPassword">Mật khẩu</label>
+                        <label for="inputPassword">Mật khẩu mới</label>
                         <input type="password" class="form-control" placeholder="Password" name="inputPassword"
                             ng-model="password" required>
                         <div ng-show="myForm.inputPassword.$dirty && myForm.inputPassword.$error.required"
@@ -38,8 +28,8 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary" ng-disabled="myForm.$invalid" ng-click="submitForm()">Đăng
-                    nhập</button>
+                <button type="submit" class="btn btn-primary" ng-disabled="myForm.$invalid" ng-click="submitForms()">Đổi
+                    mật khẩu</button>
             </form>
 
         </div>
