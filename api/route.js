@@ -2,8 +2,8 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "../components/shop.html",
-            controller: "ShopController"
+            templateUrl: "../components/home.html",
+            controller: "HomeController"
 
         })
         .when("/shop", {

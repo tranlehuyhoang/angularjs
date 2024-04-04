@@ -1,5 +1,5 @@
 <head>
-    <title>DU LỊCH NƯỚC NGOÀI</title>
+    <title>SẢN PHẨM</title>
 
 </head>
 
@@ -10,8 +10,8 @@
     <p ng-bind="$parent.user.phone"></p>
     <div class="bg-primary p-1 text-white">
         <div class="container">
-            <h1>DU LỊCH NƯỚC NGOÀI</h1><br>
-            <p>Trang chủ / DU LỊCH NƯỚC NGOÀI</p>
+            <h1>SẢN PHẨM</h1><br>
+            <p>Trang chủ / SẢN PHẨM</p>
         </div>
     </div>
     <div class="container mt-5">
@@ -19,10 +19,23 @@
 
         <div class="row justify-content-center g-5">
             <div class="col-9">
-                <h3>Danh sách các Tour Du lịch nước ngoài</h3>
-
-                <div class="d-flex text-center align-items-center text-center flex-wrap">
-                    <p>Sắp xếp theo:</p>
+                <div>
+                    <div>
+                        <h3>Danh mục sản phẩm:</h3>
+                        <ul>
+                            <li ng-repeat="category in categories">
+                                <label>
+                                    <input type="checkbox" ng-model="selectedCategories[category]"
+                                        ng-change="filterByCategory()" />
+                                    {{ category }}
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex text-center align-items-center text-center flex-wrap mb-5">
+                    <a name="" id="" class=" m-1 text-white"> <input class="form-control" type="text" name="" id=""
+                            aria-describedby="emailHelpId" placeholder="Tìm kiếm" ng-model="searchText" /></a>
                     <a name="" id="" class="btn btn-warning m-1 text-white" role="button" ng-click="new()">Mới
                         nhất</a>
                     <a name="" id="" class="btn btn-warning m-1 text-white" role="button" ng-click="sortAsc() ">Giá
@@ -30,8 +43,8 @@
                     <a name="" id="" class="btn btn-warning m-1 text-white" role="button" ng-click="sortDesc()">Giá
                         giảm dần</a>
 
+
                 </div>
-                <input type="text" ng-model="searchText" placeholder="Tìm kiếm...">
 
                 <div class="row justify-content-center align-items-center g-2">
                     <div class="col-sm-12 col-md-6 col-lg-4" data-ng-repeat="i in getCurrentPageItems()">
