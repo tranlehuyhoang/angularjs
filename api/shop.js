@@ -85,4 +85,11 @@ app.controller('ShopController', function ($scope, $http) {
         $scope.numPages = Math.ceil($scope.filteredData.length / $scope.itemsPerPage);
         $scope.currentPage = 0;
     };
+    $scope.truncateString = function (str, limit) {
+        if (str.length <= limit) {
+            return str;
+        } else {
+            return str.substring(0, limit) + "...";
+        }
+    }
 });

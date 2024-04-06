@@ -23,66 +23,87 @@
                     <div>
                         <h3>Danh mục sản phẩm:</h3>
                         <ul>
-                            <li ng-repeat="category in categories">
-                                <label>
+
+
+                            <div ng-repeat="category in categories">
+                                <!-- Toggle Button Style 7 -->
+                                <label class="toggler-wrapper style-7">
                                     <input type="checkbox" ng-model="selectedCategories[category]"
-                                        ng-change="filterByCategory()" />
-                                    {{ category }}
+                                        ng-change="filterByCategory()">
+                                    <div class="toggler-slider">
+                                        <div class="toggler-knob"></div>
+                                    </div>
                                 </label>
-                            </li>
+                                <!-- End Toggle Button Style 7 -->
+                                <div class="badge">{{ category }}</div>
+                            </div>
+                            <div>
                         </ul>
                     </div>
                 </div>
                 <div class="d-flex text-center align-items-center text-center flex-wrap mb-5">
                     <a name="" id="" class=" m-1 text-white"> <input class="form-control" type="text" name="" id=""
                             aria-describedby="emailHelpId" placeholder="Tìm kiếm" ng-model="searchText" /></a>
-                    <a name="" id="" class="btn btn-warning m-1 text-white" role="button" ng-click="new()">Mới
-                        nhất</a>
-                    <a name="" id="" class="btn btn-warning m-1 text-white" role="button" ng-click="sortAsc() ">Giá
-                        tăng dần</a>
-                    <a name="" id="" class="btn btn-warning m-1 text-white" role="button" ng-click="sortDesc()">Giá
-                        giảm dần</a>
 
+                    <button class="styling " ng-click="new()">Mới nhất</a>
+                    </button>
+                    <button class=" styling " ng-click=" sortAsc()">Giá
+                        tăng</button>
+
+                    <button class="styling " ng-click="sortDesc()">Giá
+                        giảm</button>
 
                 </div>
 
-                <div class="row justify-content-center align-items-center g-2">
+                <div class=" row justify-content-center align-items-center g-2">
                     <div class="col-sm-12 col-md-6 col-lg-4" data-ng-repeat="i in getCurrentPageItems()">
-                        <div class="card border-0">
-                            <div class="card-body p-0">
-                                <img src="{{i.image}}" class="img-fluid rounded-top" alt="">
+
+                        <div class="card-sl">
+                            <div class="card-image">
+                                <img src="{{i.image}}" />
                             </div>
-                            <div class="card-footer text-muted p-0 bg-white">
-                                <a href="#!chitiet?id={{i.id}}" class="text-primary"> {{i.title}}</a>
-                                <div class="d-flex justify-content-between align-items-center text-center">
-                                    <div> {{i.duration_days}}</div>
-                                    <div>{{i.price}}</div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div></div>
-                                    <div>{{i.old_price}}</div>
-                                </div>
+
+                            <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                            <div class="card-heading">
+                                {{ truncateString(i.title, 20) }}
+
                             </div>
+                            <div class="card-text">
+                                {{ truncateString(i.destination, 100) }}
+                            </div>
+                            <div class="card-text">
+                                {{i.price}}
+                            </div>
+                            <a href="#!chitiet?id={{i.id}}" class="card-button">Chi tiết</a>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="row justify-content-center align-items-center g-2 d-flex">
+                <div class="row justify-content-center align-items-center g-2 d-flex m-5">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination d-flex justify-content-center">
-                            <li class="page-item"><a class="page-link" ng-click="previousPage()">Previous</a>
+                            <li class="page-item"><a class="page-link" ng-click="previousPage()" style="
+                                background-color: transparent;
+                                border: 0;
+                            ">Previous</a>
                             </li>
                             <li class="page-item" ng-repeat="number in [].constructor(numPages) track by $index">
-                                <a class="page-link" ng-click="goToPage($index)">{{$index + 1}}</a>
+                                <a class="page-link   " style="border-radius: 50%;" ng-click="goToPage($index)">{{$index
+                                    + 1}}</a>
                             </li>
-                            <li class="page-item"><a class="page-link" ng-click="nextPage()">Next</a></li>
+                            <li class="page-item"><a class="page-link" ng-click="nextPage()" style="
+                                background-color: transparent;
+                                border: 0;
+                            ">Next</a></li>
                         </ul>
                     </nav>
+
                 </div>
             </div>
         </div>
     </div>
+
 
 
 </body>
